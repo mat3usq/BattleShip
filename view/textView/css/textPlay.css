@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Courier New', monospace;
+}
+
+body {
+	background-color: #333;
+	color: aliceblue;
+	height: 100vh;
+	overflow: hidden;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+p {
+	margin: 10px;
+}
+
+.option-container {
+	width: 500px;
+	height: 80px;
+	margin: 30px;
+	background-color: rgb(4, 158, 158);
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	padding: 40px;
+}
+
+.destroyer {
+	background-color: brown;
+}
+
+.submarine {
+	background-color: green;
+}
+
+.crusier {
+	background-color: purple;
+}
+
+.battleship {
+	background-color: orange;
+}
+
+.carrier {
+	background-color: blue;
+}
+
+.boat {
+	margin: 10px;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.destroyer-preview {
+	width: 25px;
+	height: 15px;
+}
+
+.submarine-preview {
+	width: 35px;
+	height: 15px;
+}
+
+.crusier-preview {
+	width: 35px;
+	height: 15px;
+}
+
+.battleship-preview {
+	width: 45px;
+	height: 15px;
+}
+
+.carrier-preview {
+	width: 55px;
+	height: 15px;
+}
+
+button {
+	position: relative;
+	text-decoration: none;
+	border: none;
+	background-color: transparent;
+	color: aliceblue;
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 30px;
+	transition: 0.3s;
+}
+
+.selected {
+	color: blueviolet;
+	font-weight: bold;
+}
+
+.x1:before {
+	color: aliceblue;
+	content: '⎧';
+	position: absolute;
+	font-size: 24px;
+	left: 0px;
+	top: 5px;
+}
+
+.x1:after {
+	color: aliceblue;
+	content: '⎭';
+	position: absolute;
+	font-size: 24px;
+	right: 0px;
+	bottom: 5px;
+}
+
+button:hover {
+	cursor: pointer;
+	color: blueviolet;
+	font-weight: bold;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#gamesboard-container {
+	width: 750px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.game-board {
+	width: 300px;
+	height: 300px;
+	margin: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 5px;
+	color: teal;
+}
+
+.block {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	transition: 0.1s;
+}
+
+span {
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 22px;
+}
+
+.hover {
+	background-color: aliceblue;
+}
+
+.boom {
+	background-color: red;
+}
+
+.empty {
+	background-color: grey;
+}
+
+table {
+	font-size: 0.3px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BattleShips - TextView</title>
+		<link rel="stylesheet" href="css/textPlay.css" />
+	</head>
+	<body>
+		<div id="game-info">
+			<span id="turn-display"></span>
+			<span id="info">Dock Your Ships!</span>
+		</div>
+
+		<div id="gamesboard-container"></div>
+
+		<div class="option-container">
+			<div id="0" class="boat destroyer-preview destroyer" draggable="true"></div>
+			<div id="1" class="boat submarine-preview submarine" draggable="true"></div>
+			<div id="2" class="boat crusier-preview crusier" draggable="true"></div>
+			<div id="3" class="boat battleship-preview battleship" draggable="true"></div>
+			<div id="4" class="boat carrier-preview carrier" draggable="true"></div>
+		</div>
+
+		<div class="buttons">
+			<button id="flip-button" class="selected">Flip</button>
+			<button id="dock-button">Dock My Ships</button>
+			<button id="start-button">Start Game</button>
+		</div>
+
+		<script type="module" src="../../controller/flip.js"></script>
+		<script type="module" src="../../controller/board.js"></script>
+		<script type="module" src="../../controller/computerPlayer.mjs"></script>
+		<script type="module" src="../../controller/userPlayer.mjs"></script>
+		<script type="module" src="../../controller/game.js"></script>
+	</body>
+</html>
