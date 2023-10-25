@@ -19,6 +19,7 @@ const addPlayerShips = (ship, startId) => {
 		shipBlocks.forEach(shipBlock => {
 			shipBlock.classList.add(ship.name)
 			shipBlock.classList.add('taken')
+			shipBlock.innerHTML = '🚢'
 		})
 	} else notDropped = true
 }

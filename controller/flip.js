@@ -5,7 +5,9 @@ export let angle = 0
 const flip = () => {
 	const optionShips = Array.from(optContainer.children)
 	angle = angle == 0 ? 90 : 0
-	optionShips.forEach(optionShip => (optionShip.style.transform = `rotate(${angle}deg)`))
+	optionShips.forEach(optionShip => {
+		optionShip.style.transform = `rotate(${angle}deg)`
+	})
 }
 
 flipBtn.addEventListener('click', flip)

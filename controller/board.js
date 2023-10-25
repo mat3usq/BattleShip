@@ -18,5 +18,5 @@ const createBoard = (color, user) => {
 	gamesBoardContainer.append(gameBoard)
 }
 
-createBoard('rgb(4, 158, 158)', 'player')
-createBoard('teal', 'computer')
+createBoard('none', 'player')
+createBoard('none', 'computer')

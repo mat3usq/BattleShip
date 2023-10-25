@@ -15,6 +15,7 @@ const addShipComputer = (ship, user) => {
 		shipBlocks.forEach(shipBlock => {
 			shipBlock.classList.add(ship.name)
 			shipBlock.classList.add('taken')
+			shipBlock.innerHTML = '🚢';
 		})
 	} else addShipComputer(ship, user)
 }

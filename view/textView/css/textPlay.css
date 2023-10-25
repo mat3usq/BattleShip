@@ -24,33 +24,39 @@ p {
 }
 
 .option-container {
-	width: 500px;
+	width: 800px;
 	height: 80px;
 	margin: 30px;
-	background-color: rgb(4, 158, 158);
+	border: 2px solid rgb(4, 158, 158);
 	display: flex;
 	align-items: center;
 	border-radius: 20px;
 	padding: 40px;
+	perspective: 800px;
 }
 
-.destroyer {
+#computer,
+#player {
+	border: 2px solid rgb(4, 158, 158);
+}
+
+#computer .destroyer {
 	background-color: brown;
 }
 
-.submarine {
+#computer .submarine {
 	background-color: green;
 }
 
-.crusier {
+#computer .crusier {
 	background-color: purple;
 }
 
-.battleship {
+#computer .battleship {
 	background-color: orange;
 }
 
-.carrier {
+#computer .carrier {
 	background-color: blue;
 }
 
@@ -61,28 +67,28 @@ p {
 }
 
 .destroyer-preview {
-	width: 25px;
-	height: 15px;
+	width: 60px;
+	height: 30px;
 }
 
 .submarine-preview {
-	width: 35px;
-	height: 15px;
+	width: 90px;
+	height: 30px;
 }
 
 .crusier-preview {
-	width: 35px;
-	height: 15px;
+	width: 90px;
+	height: 30px;
 }
 
 .battleship-preview {
-	width: 45px;
-	height: 15px;
+	width: 120px;
+	height: 30px;
 }
 
 .carrier-preview {
-	width: 55px;
-	height: 15px;
+	width: 150px;
+	height: 30px;
 }
 
 button {
@@ -91,7 +97,7 @@ button {
 	border: none;
 	background-color: transparent;
 	color: aliceblue;
-	font-size: 20px;
+	font-size: 4px;
 	padding: 10px 20px;
 	border-radius: 5px;
 	margin: 30px;
@@ -134,15 +140,16 @@ button:hover {
 }
 
 #gamesboard-container {
-	width: 750px;
+	width: 1200px;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 50px;
 }
 
 .game-board {
-	width: 300px;
-	height: 300px;
-	margin: 30px;
+	width: 406px;
+	height: 406px;
+	margin: 0px 60px;
 	display: flex;
 	flex-wrap: wrap;
 	border-radius: 5px;
@@ -150,8 +157,8 @@ button:hover {
 }
 
 .block {
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	text-align: center;
 	transition: 0.1s;
 }
@@ -163,11 +170,11 @@ span {
 }
 
 .hover {
-	background-color: aliceblue;
+	border: 2px solid rgb(4, 158, 158);
 }
 
 .boom {
-	background-color: red;
+	background-color: red !important ;
 }
 
 .empty {
@@ -176,4 +183,30 @@ span {
 
 table {
 	font-size: 0.3px;
+}
+
+/* div #player {
+	transform: rotateX(55deg) rotateY(0deg) translateZ(10px);
+}
+
+div #computer {
+	transform: rotateX(55deg) rotateY(0deg) translateZ(10px);
+}
+
+#gamesboard-container {
+	perspective: 800px;
+} */
+
+iframe {
+	border: none;
+	position: absolute;
+	z-index: -1;
+	top: -10px;
+	right: 10px;
+}
+
+#info{
+	font-size: 40px;
+	letter-spacing: 2px;
+	font-weight: bold;
 }
