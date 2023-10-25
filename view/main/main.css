@@ -62,7 +62,7 @@ body {
 }
 
 .links .x1:before {
-	color: aliceblue;
+	color: #333;
 	content: '⎧';
 	position: absolute;
 	font-size: 24px;
@@ -71,7 +71,7 @@ body {
 }
 
 .links .x1:after {
-	color: aliceblue;
+	color: #333;
 	content: '⎭';
 	position: absolute;
 	font-size: 24px;
